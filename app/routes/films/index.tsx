@@ -10,7 +10,7 @@ export const links: LinksFunction = () => {
 }
 
 //Meta properties
-export const meta: MetaFunction = () => {
+export const meta: MetaFunction = ({data}) => {
     return {title: 'Films' , description: 'Ghibli Studio'}
 }
 

@@ -14,8 +14,8 @@ export const links: LinksFunction = () => {
 }
 
 //Meta properties
-export const meta: MetaFunction = () => {
-    return {title: ' ' , description: 'Ghibli Studio'}
+export const meta: MetaFunction = ({data}) => {
+    return {title: data.title , description: data.description}
 }
 
 export const loader: LoaderFunction = async ({params}) => {

@@ -31,7 +31,9 @@ export async function getFilmById(filmId: string) {
 
 export async function getCharacterById(characterId: string) {
     const response = await fetch( `https://ghibliapi.herokuapp.com/people/${characterId}`)
-    
+    if(!response.ok){
+        throw response
+    }
     return response.json()
 }
 

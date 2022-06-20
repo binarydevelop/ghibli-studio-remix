@@ -13,8 +13,6 @@ export const loader: LoaderFunction = ({params}) => {
 
 //Meta properties
 export const meta: MetaFunction = ({data}) => {
-    console.log(data.name)
-
     return {title: data.name , description: data.id}
 }
 

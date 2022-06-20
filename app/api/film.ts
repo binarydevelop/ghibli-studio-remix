@@ -1,4 +1,5 @@
 import { Film } from "~/types/film";
+import { getComments } from "./comment";
 
 
 export async function  getFilms(title?: string | null){
@@ -26,7 +27,9 @@ export async function getFilmById(filmId: string) {
         })  
     )
 
-    return {...film, characters}
+    const comments = await getComments(filmId);
+
+    return {...film, characters, comments}
 }
 
 export async function getCharacterById(characterId: string) {

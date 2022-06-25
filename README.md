@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ghibli-studio-remix
 Ghibli Studio Films showcase using remix for development
 =======
@@ -55,4 +55,4 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
->>>>>>> a3e387a37b3ec327704a91ad0bc444913e573f59
+
